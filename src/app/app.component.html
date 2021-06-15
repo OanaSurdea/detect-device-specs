@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+
+<div class="header">
+  <p class="header__text">
+    Simply browse this current url on your desired device & click the buttons to
+    either copy to clipboard or download.
+  </p>
+</div>
+
+<main class="content">
+  <div class="flex">
+    <button
+      class="btn"
+      (click)="copyToClipboard()"
+    >
+      Copy to Clipboard
+    </button>
+
+    <button class="btn" (click)="download()">Download</button>
+  </div>
+
+  <app-specifications-table></app-specifications-table>
+</main>

@@ -1,0 +1,15 @@
+<table id="deviceSpecificationsTable">
+  <thead>
+    <th>Property</th>
+    <th>Value</th>
+    <th>Version</th>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let spec of deviceSpecifications">
+      <td>{{ spec.property }}</td>
+      <td>{{ spec.value }}</td>
+      <td>{{ spec.version }}</td>
+    </tr>
+  </tbody>
+</table>
